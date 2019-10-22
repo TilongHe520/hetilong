@@ -22,4 +22,21 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+    //重写hashcode equals
+    public int hashCode(){
+        return name.hashCode()+age*55;
+    }
+    public boolean equals(Object obj){
+        if(this == obj)
+            return true;
+        if(obj == null)
+            return false;
+        if(obj instanceof Person){
+            Person person = (Person)obj;
+            return name.equals(person.name) && age==person.age;
+        }
+        return false;
+    }
+
 }
