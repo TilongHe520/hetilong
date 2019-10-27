@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e25f78b-fafe-43b5-86f6-7b69d33a4512" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/ThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/Tickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/demo/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/demo/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/demo/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/threadsafe/demo/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/myjdbc/JDBCDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/myjdbc/JDBCPoolUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/myjdbc/JDBCutils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/com/hetl/myjdbc/QueryRunnerDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +33,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -40,12 +41,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="F:/java/01_基础班_最新北京20160824/day30/day30_code/讲师代码/day30_datasource/lib/commons-pool-1.5.6.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\tilong_he_test\hetilong" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.com.hetl.hetlfile" />
     </key>
@@ -62,13 +67,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadDemo (2)">
-    <configuration name="PropertiesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.hetlfile.PropertiesDemo" />
+  <component name="RunManager" selected="Application.QueryRunnerDemo">
+    <configuration name="QueryRunnerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.myjdbc.QueryRunnerDemo" />
       <module name="hetilong" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.com.hetl.hetlfile.*" />
+          <option name="PATTERN" value="cn.com.hetl.myjdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,39 +107,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.xiancheng.ThreadDemo" />
+    <configuration name="JDBCDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hetilong" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.com.hetl.xiancheng.*" />
+          <option name="PATTERN" value="cn.com.hetl.myjdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="cn.com.hetl.myjdbc" />
+      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.myjdbc.JDBCDemo" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.xiancheng.ThreadPoolDemo" />
+    <configuration name="JDBCDemo.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hetilong" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.com.hetl.xiancheng.*" />
+          <option name="PATTERN" value="cn.com.hetl.myjdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="cn.com.hetl.myjdbc" />
+      <option name="MAIN_CLASS_NAME" value="cn.com.hetl.myjdbc.JDBCDemo" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueryRunnerDemo" />
+        <item itemvalue="JUnit.JDBCDemo" />
+        <item itemvalue="JUnit.JDBCDemo.insert" />
         <item itemvalue="Application.ThreadDemo (2)" />
         <item itemvalue="Application.ThreadDemo (1)" />
-        <item itemvalue="Application.ThreadPoolDemo" />
-        <item itemvalue="Application.ThreadDemo" />
-        <item itemvalue="Application.PropertiesDemo" />
       </list>
     </recent_temporary>
   </component>
